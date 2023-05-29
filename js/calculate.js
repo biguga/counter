@@ -1,4 +1,4 @@
-import { calculateCaliries } from './calculateCalorie.js';
+import { calculateCalories } from './calculateCalorie.js';
 
 const counterForm = document.querySelector('.counter__form');
 const counterResult = document.querySelector('.counter__result');
@@ -48,7 +48,7 @@ const countCalories = () => {
     counterForm.addEventListener('submit', (evt) => {
         evt.preventDefault();
         counterResult.classList.remove('counter__result--hidden');
-        calculateCaliries(userData);
+        calculateCalories(userData);
     });
 
     resetButton.addEventListener('click', (evt) => {
