@@ -1,3 +1,3 @@
-import {countCalories} from './calculate_form.js';
+import {countCalories} from './calculate.js';
 
 countCalories()
