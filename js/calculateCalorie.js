@@ -7,7 +7,7 @@ const ACTIVITY_COEFFICIENTS = {
     max: 1.9
 }
 
-const calculateCaliries = ({gender, age, height, weight, activity}) => {
+const calculateCalories = ({gender, age, height, weight, activity}) => {
     let sumOfCalories;
     if (gender === 'male') {
         sumOfCalories = ACTIVITY_COEFFICIENTS[activity]*((10 * weight) + (6.25 * height) - (5 * age) + 5);
@@ -25,4 +25,4 @@ const calculateCaliries = ({gender, age, height, weight, activity}) => {
     });
 }
 
-export {calculateCaliries}
+export {calculateCalories}
