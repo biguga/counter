@@ -1,1 +1,1 @@
-import './calculate_button.js';
+import {calorieCounterMain} from './calculate.js';
