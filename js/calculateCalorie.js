@@ -10,9 +10,9 @@ const ACTIVITY_COEFFICIENTS = {
 const calculateCaliries = ({gender, age, height, weight, activity}) => {
     let sumOfCalories;
     if (gender === 'male') {
-        sumOfCalories = ACTIVITY_COEFFICIENTS[activity]*((10 * weight) + (6,25 * height) - (5 * age) - 161);
+        sumOfCalories = ACTIVITY_COEFFICIENTS[activity]*((10 * weight) + (6.25 * height) - (5 * age) + 5);
     } else {
-        sumOfCalories = ACTIVITY_COEFFICIENTS[activity]*((10 * weight) + (6,25 * height) - (5 * age) + 5);
+        sumOfCalories = ACTIVITY_COEFFICIENTS[activity]*((10 * weight) + (6.25 * height) - (5 * age) - 161);
     }
     const groupsOfNorms = {
         norm: Math.round(sumOfCalories),
